@@ -1,8 +1,8 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 android-support-v13 jsr305
+LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common org.dirtyunicorns.utils
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 android-support-v13 jsr305 
 
 LOCAL_MODULE_TAGS := optional
 
@@ -33,3 +33,4 @@ include $(BUILD_PACKAGE)
 ifeq (,$(ONE_SHOT_MAKEFILE))
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+
