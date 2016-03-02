@@ -17,7 +17,7 @@
  * Wrapper class for delivering icon picker results to activities or fragments
  */
 
-package com.android.settings.screwd;
+package com.android.settings;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -27,7 +27,7 @@ public class IconPickHelper {
     public static final int REQUEST_PICK_ICON_PACK = 100;
     public static final int REQUEST_PICK_ICON_GALLERY = 101;
     public static final String INTENT_ACTION_EDIT_CLASS = "com.android.settings";
-    public static final String INTENT_ACTION_ICON_PICKER_COMPONENT = "com.android.settings.screwd.IconPickerActivity";
+    public static final String INTENT_ACTION_ICON_PICKER_COMPONENT = "com.android.settings.IconPickerActivity";
     private static final int REQUEST_CODE = 420;
     private Activity mParent;
     private OnPickListener mListener;
